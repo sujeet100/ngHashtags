@@ -25,7 +25,7 @@ angular.module('ngHashtags', [])
                    function getDecoratedHashTags () {
                      var text = ngModel.$viewValue;
                      if(text) {
-                      text = text.replace(/(#[a-z\d-]+)/g, '<span class="tags-highlight" style="background-color: rgba(88, 144, 255, .15);border-bottom: 1px solid rgba(88, 144, 255, .3);">$1</span>')
+                      text = text.replace(/(#[A-z\d-]+)/g, '<span class="tags-highlight" style="background-color: rgba(88, 144, 255, .15);border-bottom: 1px solid rgba(88, 144, 255, .3);">$1</span>')
                      }
                      elem.html(text);
                    }
